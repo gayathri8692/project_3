@@ -5,6 +5,7 @@ class LessonOne extends Component {
   render() {
     return (
       <div className="lesson-one">
+      <h2>UNIT 1</h2>
       {this.props.unitsOne.map((val, key) => {
         // console.log(val);
           return (

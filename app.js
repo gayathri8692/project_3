@@ -6,13 +6,15 @@ const react = require('react');
 const cors = require('cors');
 const bodyParser = require('body-parser')
 const app = express();
-const repoRoute = require('./routes/repos.js')
+
 const connect = require ('./db/config.js');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
+//Importing routes
+const repoRoute = require('./routes/repos.js')
 app.use('/api/units', repoRoute);
 
 

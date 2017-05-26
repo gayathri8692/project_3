@@ -6,6 +6,14 @@ import LessonTwo from './components/LessonTwo';
 import LessonThree from './components/LessonThree';
 import './App.css';
 
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+
 class App extends Component {
   constructor() {
     super();
@@ -363,12 +371,9 @@ handleDelete(repoId) {
   }
 
 
-
-
-
-
   render() {
     return (
+      <Router>
       <div className="App">
         <Header />
           <LessonOne 
@@ -399,7 +404,7 @@ handleDelete(repoId) {
           handleDelete={this.handleDelete}
           handleEdit={this.handleEdit}
            />
-           <LessonThree
+          <LessonThree
           unitsThree={this.state.unitsThree}
           handleSubmitUnitThree={this.handleSubmitUnitThree}
           handleInputTypeChangeThree={this.handleInputTypeChangeThree}
@@ -415,6 +420,7 @@ handleDelete(repoId) {
            />
         <Footer />
       </div>
+      </Router>
     );
   }
 }

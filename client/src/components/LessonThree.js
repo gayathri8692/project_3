@@ -5,6 +5,7 @@ class LessonThree extends Component {
   render() {
     return (
       <div className="lesson-three">
+      <h3>UNIT 3</h3>
       {this.props.unitsThree.map((val) => {
         return (
           <LessonThreeList
@@ -13,6 +14,7 @@ class LessonThree extends Component {
             github={val.github}
             id={val._id}
             handleDelete={this.props.handleDelete}
+            handleEdit={this.props.handleDelete}
             />
           )
         })}
