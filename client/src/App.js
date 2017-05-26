@@ -236,7 +236,6 @@ handleSubmitUnitOne(event) {
 
 
   handleSubmitUnitTwo(event) {
-  console.log(event.target)
     event.preventDefault();
 
     fetch('/api/units/two', {
@@ -326,13 +325,15 @@ handleSubmitUnitOne(event) {
 
 
 handleEdit(event) {
-  console.log(event.target._id);
+  console.log('im editing');
   event.preventDefault();
-
-  fetch(`/api/units/${event.target._id}`, {
+  console.log(event.target._id);
+  console.log(event.target.id);
+  fetch(`/api/units/${event.target.id.value}`, {
      method: 'PUT',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
+        _id:event.target._id,
         type: event.target.type.value,
         unit: event.target.unit.value,
         title: event.target.title.value,
@@ -342,8 +343,9 @@ handleEdit(event) {
   }),
 })
   .then((response) => {
+    // console.log(response);
       if (response.status === 200) {
-        this.fetchAllQuotes();
+        this.fetchAllUnits();
       }
     })
 }

@@ -116,12 +116,14 @@ RepoController.delete = (req, res) => {
 
 
 RepoController.update = (req, res) => {
-  Repo.findByIdAndUpdate({"_id":req.params._id}, {
+  console.log(req.body._id);
+  Repo.findOneAndUpdate({"_id":req.params._id}, {$set:{
       unit: req.body.unit,
       type: req.body.type,
       title: req.body.title,
       objective: req.body.objective,
       github: req.body.github
+  }
   }).exec()
   .then((repo) => {
     res.json({
