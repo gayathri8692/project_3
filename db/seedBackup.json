@@ -1,0 +1,617 @@
+{
+  "data":[
+
+
+  {
+    "unit" : 1,
+    "type" : "LEC",
+    "title" : "Tooling development environment",
+    "objective" : "Listing necessary tools in Computer programming and web development. Describing each, and identifying their benefits.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D01_Tooling",
+    "resources" : [
+      {
+        "website" : "Youtube",
+        "url" : "www.youtube.com"
+      }
+    ]
+},
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Command Line Interface",
+    "objective" : "Differentiating between the CLI and GUI. Identifying pros and cons about using the CLI, and highlight its benefits to developers. ",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D02_CLI",
+    "resources" : [
+      {
+        "website" : "Youtube",
+        "url" : "www.youtube.com"
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Datatypes",
+    "objective" : "Identifying and describing the different data types in JS, describing how to declare assign and manipulate variables, as well as the different use cases for each data type.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D02_DATATYPES",
+    "resources" : [
+      {
+        "website" : "Youtube",
+        "url" : "www.youtube.com"
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Git",
+    "objective" : "Explaining the difference between git and GitHub, and listing some common git commands. Describing the flow of editing files, adding them, and committing them, describing the flow of forking and cloning, and practicing the flow of submitting homework.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D02_Git",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Web Fundamentals",
+    "objective" : "Describing at a high level how the internet works,  and identifying the parts of a URL. Explaining the client/server request/response cycle in the context of the web browser, and describing the DOM and the DOM tree.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D03_Web-Fundamentals",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "CSStravaganza",
+    "objective" : "Explaining CSS, how to include it, selectors and specificity, media queries and the box model. Explaining common adaptive design techniques, display, position and float & clearfix.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D04_CSStravaganza",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Conditionals_and_iterators",
+    "objective" : "Differentiating between true, false, 'truth-y', and 'false-y’. Using if/else conditionals to I. control program flow based on boolean conditions II. switch conditionals to control program flow based on explicit conditions III. comparison operators to evaluate and compare statements, and IV. boolean logic (!, &&, ||) to combine and manipulate conditionals.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D05_Conditional_Logic-Iterators",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Functions",
+    "objective" : "Functions overview, its use, and expressions.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D05_Functions101",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Algorithms",
+    "objective" : "Explaining pseudocode and how to approach a coding problem.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D06_Algorithms",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Objects-Arrays",
+    "objective" : "Defining objects, and explaining object properties and methods and how to create object with properties.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D06_ObjectsArrays",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "DOM Manipulation",
+    "objective" : "Javascript overview, using Javascript files, DOMContentLoaded, and selecting elements.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D07_DOMManipulation",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "CSS",
+    "objective" : "Describing 'pseudo' in the context of CSS and applying pseudo-classes and the transition property to add interactivity to a page built with HTML and CSS. Describing microinteractions and identify them in everyday web apps, how to select even and odd elements on a page, and the FontAwesome use case for pseudo-elements. Explaining the difference between pseudo-classes and pseudo-elements.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D07_CSS-201",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Scope in JS",
+    "objective" : "Introduction to scope in JS and some awesome ES6 features.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D08_ScopeES6",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Classes",
+    "objective" : "Reviewing different ways of Object creation in JavaScript, defining JS Class, comparing ES6 Class syntax to ES5 constructor function, and reviewing Animal Classification table from 5th grade. Also, extending Base class to create a child class with inherited attributes and methods.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D09_CLASSES",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Forms",
+    "objective" : "Understanding the purpose of forms and how they work in web apps, as well as the major attributes of the tag, and going through common form components and what they are used for.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D09_CLASSES",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "CSS Animations",
+    "objective" : "Understanding how traditional hand-drawn keyframe animation and CSS animation relate, using the animation property to animate elements and the transform property to change elements, recognizing the different values for the transform property and the parts of keyframe syntax, and analyzing a description of an animation and understanding at a high level what steps would be needed to reproduce it.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D11_CSS-Animations",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "jQuery",
+    "objective" : "Comparing the similarities and differences between jQuery and vanilla dom manipulation, understanding how to effectively use jQuery selectors, and analyzing the different methods in the jQuery library.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D11_jQuery",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LEC",
+    "title" : "Wireframing-Planning",
+    "objective" : "Defining user stories and creating user stories / acceptance criteria for a familiar web app, creating wireframes based on user stories and using them as a roadmap for tackling programming challenges, and then using ZenHub to organize project flow.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U01_D12_Wireframing-Planning",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LAB",
+    "title" : "GIT",
+    "objective" : "Practicing Git: making changes to file, adding, committing, and pushing those changes.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U01_D02_Git",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LAB",
+    "title" : "ONGOING_SPACE",
+    "objective" : "Getting  image files (jpeg or photoshop document) and recreating it using HTML and CSS. ",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U01_ONGOING_Space",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 1,
+    "type" : "LAB",
+    "title" : "Scorekeeper",
+    "objective" : "Creating a simple score keeper application using JavaScript",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U01_D07_ScoreKeeper",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LAB",
+    "title" : "Forms & DOM",
+    "objective" : "Building form and rendering things on it.",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U01_D09_Forms-DOM",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 1,
+    "type" : "LAB",
+    "title" : "jQuery",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U01_D11_jquery",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+
+
+
+{
+  "unit" : 2,
+    "type" : "LEC",
+    "title" : "API",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U02_D02_APIS",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 2,
+    "type" : "LEC",
+    "title" : "Iteration-Async",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U02_D02_Iteration-Async",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 2,
+    "type" : "LEC",
+    "title" : "Async",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U02_D03_Async",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+
+
+
+
+
+
+
+{
+  "unit" : 2,
+    "type" : "LAB",
+    "title" : "Star-Wars-API",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U02_D02_Star-Wars-API",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 2,
+    "type" : "LAB",
+    "title" : "SQL",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U02_D06_SQL-102",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+
+{
+  "unit" : 2,
+    "type" : "LAB",
+    "title" : "Express-MVC-Movies",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U02_D09_ExpressMVC_Movies",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 2,
+    "type" : "HW",
+    "title" : "HTTP-Intro",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/HW_U02_D01_HTTP-Intro",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+
+{
+  "unit" : 2,
+    "type" : "HW",
+    "title" : "Method-APIs",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/HW_U02_D02_Methods-APIs",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+
+{
+  "unit" : 2,
+    "type" : "HW",
+    "title" : "Flexbox-Node",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/HW_U02_D04_Flexbox-Node",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 3,
+    "type" : "LEC",
+    "title" : "Express-as-an-API",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U03_D01_Express-as-an-API",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 3,
+    "type" : "LEC",
+    "title" : "CALL_BIND_THIS",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U03_D02_CALL_BIND_THIS",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 3,
+    "type" : "LEC",
+    "title" : "React-Props-Components",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LECTURE_U03_D04_React-Props-Components",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+{
+  "unit" : 3,
+    "type" : "LAB",
+    "title" : "React-Props-Components",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U03_D04_React-Props-Components",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 3,
+    "type" : "LAB",
+    "title" : "JSX-Recipes",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U03_D05_JSX-Recipes",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 3,
+    "type" : "LAB",
+    "title" : "INDEPENDENT_PAIR_PROGRAMMING",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U03_D05_INDEPENDENT_PAIR_PROGRAMMING",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 3,
+    "type" : "HW",
+    "title" : "React-Reading",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/HW_U03_D01_React-Reading",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+{
+  "unit" : 3,
+    "type" : "HW",
+    "title" : "More-React-Reading",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/HW_U03_D02_More-React-Reading",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+},
+
+
+
+{
+  "unit" : 3,
+    "type" : "HW",
+    "title" : "Create-React-App",
+    "objective" : "Changing the color of the Home button in the navbar to a random color from the colors array, everytime it is click using jQuery",
+    "github" : "https://git.generalassemb.ly/nyc-wdi-ada/HW_U03_D03_Create-React-App",
+    "resources" : [
+      {
+        "website" : "",
+        "url" : ""
+      }
+    ]
+}
+
+  ]
+}
