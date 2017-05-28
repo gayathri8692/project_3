@@ -156,18 +156,14 @@ handleDeleteOne(repoId) {
 
 
 
-
-
-
-
   render() {
     return (
       <div className="lesson-one">
-      <h2>UNIT 1</h2>
       
       {this.state.unitsOne.map((val, key) => {
         // console.log(val);
           return (
+          <div className="lesson-item">
             <LessonOneList
           type={val.type}
           unit={val.unit}
@@ -177,6 +173,7 @@ handleDeleteOne(repoId) {
           handleDeleteOne={this.handleDeleteOne}
           handleEditOne={this.handleEditOne}
           />
+          </div>
           )
         })}
           <div>
