@@ -41,7 +41,7 @@ class LessonTwoList extends Component {
       <form 
       className="edit-form"
       onSubmit={(event) => {
-        this.props.handleEdit(event);
+        this.props.handleEditTwo(event);
         this.setState({isBeingEdited: false});
       }}
       >
@@ -93,7 +93,7 @@ class LessonTwoList extends Component {
       <div className="lessonTwoList">
          <h3>{this.props.type}:  {this.props.title}</h3>
         <a>{this.props.github}</a>
-        <button onClick={() => { this.props.handleDelete(this.props.id) }}>
+        <button onClick={() => { this.props.handleDeleteTwo(this.props.id) }}>
           Delete
           </button>
         <button onClick={() => {

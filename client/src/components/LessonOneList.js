@@ -40,7 +40,7 @@ renderEditForm() {
       <form 
       className="edit-one"
       onSubmit={(event) => {
-        this.props.handleEdit(event);
+        this.props.handleEditOne(event);
         this.setState({isBeingEdited: false});
       }}
       >
@@ -89,7 +89,7 @@ renderEditForm() {
       <div className="lessonOneList">
         <h3>{this.props.type}:  {this.props.title}</h3>
         <a>{this.props.github}</a>
-        <button onClick={() => { this.props.handleDelete(this.props.id) }}>
+        <button onClick={() => { this.props.handleDeleteOne(this.props.id) }}>
           Delete!
         </button>
         <button onClick={() => {
