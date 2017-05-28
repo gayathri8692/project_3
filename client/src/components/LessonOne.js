@@ -156,14 +156,9 @@ handleDeleteOne(repoId) {
 
 
 
-
-
-
-
   render() {
     return (
       <div className="lesson-one">
-      <h2>UNIT 1</h2>
       
       {this.state.unitsOne.map((val, key) => {
         // console.log(val);

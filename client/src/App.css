@@ -1,4 +1,50 @@
 /*--------------
+   universal
+---------------*/
+
+main {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.container {
+  left: 0;
+  right: 0;
+
+}
+
+
+/*--------------
+   unit bars
+---------------*/
+
+.unit-selector {
+  width: 100%;
+  color: black;
+  text-align:center;
+  background-color: #3F51B5
+}
+
+
+.unit {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.unit:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.unit:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/*--------------
     header
 ---------------*/
 .header {

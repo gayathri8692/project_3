@@ -150,14 +150,9 @@ handleDeleteThree(repoId) {
 
 
 
-
-
-
-
   render() {
     return (
       <div className="lesson-three">
-      <h3>UNIT 3</h3>
       {this.state.unitsThree.map((val) => {
         return (
           <LessonThreeList

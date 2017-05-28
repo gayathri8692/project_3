@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Home from './components/Home';
 import Footer from './components/Footer';
-import LessonOne from './components/LessonOne';
-import LessonTwo from './components/LessonTwo';
-import LessonThree from './components/LessonThree';
 import Units from './components/Units';
 import './App.css';
 
@@ -24,7 +20,6 @@ class App extends Component {
     <Router>
       <div className="App">
         <Header />
-        <Home />
         <Units />
         <Footer />
       </div>
