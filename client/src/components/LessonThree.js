@@ -155,6 +155,7 @@ handleDeleteThree(repoId) {
       <div className="lesson-three">
       {this.state.unitsThree.map((val) => {
         return (
+        <div className="lesson-item">
           <LessonThreeList
             type={val.type}
             title={val.title}
@@ -162,7 +163,8 @@ handleDeleteThree(repoId) {
             id={val._id}
             handleDeleteThree={this.handleDeleteThree}
             handleEditThree={this.handleEditThree}
-            />
+          />
+          </div>
           )
         })}
 

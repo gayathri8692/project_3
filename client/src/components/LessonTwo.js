@@ -152,6 +152,7 @@ render() {
       <div className="lesson-two">
       {this.state.unitsTwo.map((val) => {
           return (
+          <div className="lesson-item">
             <LessonTwoList
             type={val.type}
             title={val.title}
@@ -160,6 +161,7 @@ render() {
             handleDeleteTwo={this.handleDeleteTwo}
             handleEditTwo={this.handleEditTwo}
             />
+          </div>
             )
          })}
 
