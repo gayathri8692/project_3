@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-      <p>Created in GA</p>
+      <p>Created with ♥ by WDI-ADA</p>
       </div>
     );
   }
