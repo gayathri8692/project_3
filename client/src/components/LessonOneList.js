@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class LessonOneList extends Component {
   constructor(props) {
     super(props);
@@ -87,8 +88,10 @@ renderEditForm() {
   renderLessonOne() {
     return (
       <div className="lessonOneList">
+ 
         <h3>{this.props.type}:  {this.props.title}</h3>
-        <a>{this.props.github}</a>
+        <a href={this.props.github}>Github link</a>
+      
         <button onClick={() => { this.props.handleDeleteOne(this.props.id) }}>
           Delete!
         </button>

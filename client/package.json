@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^3.3.7",
+    "linkifyjs": "^2.1.4",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
+    "react-linkify": "^0.2.1",
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {

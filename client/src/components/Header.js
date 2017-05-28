@@ -4,7 +4,10 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <h3>ADABASE</h3>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        </style>
+        <h3>ADA LIBRARY</h3>
         
       </div>
     );

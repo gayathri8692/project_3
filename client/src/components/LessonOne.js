@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LessonOneList from './LessonOneList';
 
+
+
 class LessonOne extends Component {
   constructor() {
     super();
@@ -88,7 +90,9 @@ handleSubmitUnitOne(event) {
     })
     .then((responseJson) => {
       // console.log(responseJson);
+      
       if (responseJson._id !== undefined) {
+  
         const newLessonOne = {
           type: responseJson.type,
           unit: responseJson.author,
@@ -160,6 +164,7 @@ handleDeleteOne(repoId) {
     return (
       <div className="lesson-one">
       <h2>UNIT 1</h2>
+      
       {this.state.unitsOne.map((val, key) => {
         // console.log(val);
           return (
