@@ -14,7 +14,7 @@ class LessonTwo extends Component {
             github={val.github}
             id={val._id}
             handleDelete={this.props.handleDelete}
-            handleEdit={this.props.handleDelete}
+            handleEdit={this.props.handleEdit}
             />
             )
          })}
