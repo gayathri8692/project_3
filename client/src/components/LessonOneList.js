@@ -116,7 +116,6 @@ renderEditForm() {
     );
   }
 
-
   render() {
     if (this.state.isBeingEdited === false) {
       return this.renderLessonOne();

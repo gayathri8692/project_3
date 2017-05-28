@@ -3,13 +3,9 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <div className="header">
-        <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-        </style>
-        <h3>ADA LIBRARY</h3>
-        
-      </div>
+      <header className="header">
+        <h3>adabase</h3>
+      </header>
     );
   }
 }

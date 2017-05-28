@@ -168,10 +168,6 @@ setFeature(id) {
   }
 
 
-
-
-
-
   render() {
     if (this.state.apiDataLoaded) {
     return (
@@ -180,11 +176,11 @@ setFeature(id) {
           : "my-quote"
   }>
       <div className="lesson-one">
-      <h2>UNIT 1</h2>
       
       {this.state.unitsOne.map((val, key) => {
         // console.log(val);
           return (
+          <div className="lesson-item">
             <LessonOneList
           type={val.type}
           unit={val.unit}
@@ -199,6 +195,7 @@ setFeature(id) {
           setFeature={this.setFeature}
           featuredUnit={this.state.featuredUnit}
           />
+          </div>
           )
         })}
           <div>

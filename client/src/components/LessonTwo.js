@@ -150,9 +150,9 @@ handleDeleteTwo(repoId) {
 render() {
     return (
       <div className="lesson-two">
-      <h2>Unit 2</h2>
       {this.state.unitsTwo.map((val) => {
           return (
+          <div className="lesson-item">
             <LessonTwoList
             type={val.type}
             title={val.title}
@@ -161,6 +161,7 @@ render() {
             handleDeleteTwo={this.handleDeleteTwo}
             handleEditTwo={this.handleEditTwo}
             />
+          </div>
             )
          })}
 
