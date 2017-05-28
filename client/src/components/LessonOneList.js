@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+// import LessonOneSummary from './LessonOneSummary';
+
+
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Link
+// } from 'react-router-dom';
 
 
 class LessonOneList extends Component {
@@ -10,6 +18,7 @@ class LessonOneList extends Component {
       inputTitleValue: this.props.title,
       inputGithubValue: this.props.github,
       inputUnitValue: this.props.unit,
+      featuredUnit: null,
     }
     this.handleInputTypeChange=this.handleInputTypeChange.bind(this);
     this.handleInputTitleChange=this.handleInputTitleChange.bind(this);
@@ -37,6 +46,7 @@ handleInputUnitChange(event) {
 
 renderEditForm() {
   return (
+    
     <li>
       <form 
       className="edit-one"
@@ -87,20 +97,22 @@ renderEditForm() {
 
   renderLessonOne() {
     return (
-      <div className="lessonOneList">
- 
+      <div className='lesson'>   
         <h3>{this.props.type}:  {this.props.title}</h3>
         <a href={this.props.github}>Github link</a>
-      
         <button onClick={() => { this.props.handleDeleteOne(this.props.id) }}>
           Delete!
         </button>
+        
+       
+
         <button onClick={() => {
           this.setState({isBeingEdited: true})
         }}>
           Edit!
         </button>
-      </div>
+</div>   
+     
     );
   }
 
@@ -111,6 +123,7 @@ renderEditForm() {
     } else {
       return this.renderEditForm();
     }
+    
   }
 
 }

@@ -15,11 +15,33 @@ import {
 } from 'react-router-dom';
 
 
+
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isFeatured: false,
+      isLesson: false,
+    }
+    this.setFeature = this.setFeature.bind(this);
+  }
+
+  setFeature() {
+    this.setState({
+      isFeatured: !this.state.isFeatured,
+    })
+  }
+
 
   render() {
+    const isLesson = this.state.isLesson;
+    if (isLesson){
+      return ({});
+    }else{
     return (
       <Router>
+    
       <div className="App">
         <Header />
         <main>
@@ -37,8 +59,10 @@ class App extends Component {
         </main>
         <Footer />
       </div>
+
       </Router>
     );
+    }
   }
 }
 

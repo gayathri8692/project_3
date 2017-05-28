@@ -14,6 +14,8 @@ class LessonOne extends Component {
       inputUnitValueOne: '',
       inputTitleValueOne: '',
       inputGithubValueOne: '',
+      featuredUnit: null,
+      apiDataLoaded: false,
   }
     this.handleSubmitUnitOne=this.handleSubmitUnitOne.bind(this);
     this.handleInputTypeChangeOne=this.handleInputTypeChangeOne.bind(this);
@@ -24,6 +26,8 @@ class LessonOne extends Component {
     this.handleDeleteOne=this.handleDeleteOne.bind(this);
 
     this.handleEditOne=this.handleEditOne.bind(this);
+    
+    this.setFeature = this.setFeature.bind(this);
   }
 
 
@@ -42,6 +46,7 @@ fetchAllUnitOne() {
     this.setState((prevState) => {
       return{
         unitsOne : jsonResponse.repo,
+        apiDataLoaded: true,
       }
     })
   })
@@ -155,13 +160,25 @@ handleDeleteOne(repoId) {
   }
 
 
+setFeature(id) {
+    console.log('featured' + id);
+    this.setState({
+      featuredUnit: id,
+    })
+  }
+
 
 
 
 
 
   render() {
+    if (this.state.apiDataLoaded) {
     return (
+      <div className={(this.props.featuredUnit === this.props.id) 
+          ? "my-quote featured" 
+          : "my-quote"
+  }>
       <div className="lesson-one">
       <h2>UNIT 1</h2>
       
@@ -174,8 +191,13 @@ handleDeleteOne(repoId) {
           title={val.title}
           github={val.github}
           id={val._id}
+          objective={val.objective}
+          resource={val.resources}
           handleDeleteOne={this.handleDeleteOne}
           handleEditOne={this.handleEditOne}
+          apiData={this.state.apiData} 
+          setFeature={this.setFeature}
+          featuredUnit={this.state.featuredUnit}
           />
           )
         })}
@@ -222,8 +244,10 @@ handleDeleteOne(repoId) {
           </form>
           
           </div>
+    </div>
       </div>
     );
+    } else return <p>Loading</p>;
   }
 }
 

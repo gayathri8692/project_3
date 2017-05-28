@@ -14,7 +14,7 @@
 }*/
 
 
-/*.header {
+.header {
   background-color: rgb(51, 48, 45);
   margin-top: -20px;
   height: 60px;
@@ -117,10 +117,30 @@ a.unit4 {
   flex-direction: column;
   justify-content: center;
   background-image: url('./images/b4.jpeg');
-  background: rgba(76, 175, 80, 0.5);
+  /*background: rgba(76, 175, 80, 0.5);*/
   background-size: cover;
   font-weight: bold;
   font-size: 18px;
   color: white;
   font-family: 'Open Sans', sans-serif;
-}*/
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.featured {
+  background-color: #F9F7E8;
+}
+
+.fa-star {
+  cursor: pointer;
+}
+
+
