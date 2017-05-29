@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Units from './components/Units';
+import LessonOne from './components/LessonOne';
+import LessonTwo from './components/LessonTwo';
+import LessonThree from './components/LessonThree';
 import './App.css';
-
-
 
 import {
   BrowserRouter as Router,
@@ -13,51 +13,63 @@ import {
 } from 'react-router-dom';
 
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isFeatured: false,
+    this.state = {      
       isLesson: false,
     }
-    this.setFeature = this.setFeature.bind(this);
+    this.setLesson=this.setLesson.bind(this);
   }
 
-  setFeature() {
+setLesson(){
     this.setState({
-      isFeatured: !this.state.isFeatured,
+      isLesson:true,
     })
   }
 
+ render() {
+    if (this.state.isLesson===false) {
+      return (
+        <Router>
+        
+          <div className='one'>
+          <Header />
+          <div className='units'>
+             <Link to='/api/units/one' className='unit1' onClick={this.setLesson}>
+             <span className='span1'>
+             <p className='head'>UNIT 1</p>
+             </span></Link>  
 
-  render() {
-    const isLesson = this.state.isLesson;
-    if (isLesson){
-      return ({});
-    }else{
-    return (
-
-      <Router>
-    
-
-    <Router>
-
-      <div className="App">
+             <Link to='/api/units/two' className='unit2' onClick={this.setLesson}>UNIT 2</Link> 
+             <Link to='/api/units/three' className='unit3' onClick={this.setLesson}>UNIT 3</Link> 
+             <Link to='/api/units/' className='unit4' onClick={this.setLesson}>UNIT 4</Link> 
+             </div>
+             <Footer />
+          </div>
+        </Router>
+      );
+    }
+    else {    
+      return (
+        <Router>    
+        <div className="App">
         <Header />
-        <Units />
+        <main>                 
+          <Route exact path='/api/units/one' component={LessonOne} /> 
+          <Route path='/api/units/two' component={LessonTwo} />           
+          <Route path='/api/units/three' component={LessonThree} />           
+          <Route path='/api/units/four' component={Header} />
+        </main>
+        
         <Footer />
       </div>
 
-
       </Router>
-
-    </Router>
-
     );
     }
-  }
+  
+}
 }
 
 export default App;

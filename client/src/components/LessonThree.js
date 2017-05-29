@@ -150,28 +150,36 @@ handleDeleteThree(repoId) {
 
 
 
+
+
+
+
   render() {
     return (
       <div className="lesson-three">
+      <h2>UNIT 3</h2>
       {this.state.unitsThree.map((val) => {
         return (
-        <div className="lesson-item">
           <LessonThreeList
             type={val.type}
+            unit={val.unit}
             title={val.title}
             github={val.github}
             id={val._id}
+            objective={val.objective}
+            resource={val.resources}
             handleDeleteThree={this.handleDeleteThree}
             handleEditThree={this.handleEditThree}
-          />
-          </div>
+            />
           )
         })}
 
         <div>
           <form
-          onSubmit={this.handleSubmitUnitThree}>
-          <label>Enter Type</label>
+          onSubmit={this.handleSubmitUnitThree}
+          className='form-add'
+          >
+          <label>Enter Type
           <input 
           name="type"
           type="text"
@@ -179,8 +187,9 @@ handleDeleteThree(repoId) {
           placeholder="Enter Type(LEC, LAB or HW)"
           onChange={this.handleInputTypeChangeThree}
           />
+          </label>
 
-          <label>Enter Unit</label>
+          <label>Enter Unit
           <input 
           name="unit"
           type="text"
@@ -188,8 +197,9 @@ handleDeleteThree(repoId) {
           placeholder="Enter Unit"
           onChange={this.handleInputUnitChangeThree}
           />
+          </label>
 
-          <label>Enter Title</label>
+          <label>Enter Title
           <input 
           name="title"
           type="text"
@@ -197,8 +207,9 @@ handleDeleteThree(repoId) {
           placeholder="Enter Title"
           onChange={this.handleInputTitleChangeThree}
           />
+          </label>
 
-          <label>Enter Github Link</label>
+          <label>Enter Link
           <input 
           name="github"
           type="text"
@@ -206,7 +217,9 @@ handleDeleteThree(repoId) {
           placeholder="Enter Link"
           onChange={this.handleInputGithubChangeThree}
           />
-          <input type="submit" value="Add!" />
+          </label>
+
+          <input className='submit-add' type="submit" value="Add!" />
           </form>
           </div>
       </div>

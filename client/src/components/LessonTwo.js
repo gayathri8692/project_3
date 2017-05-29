@@ -150,25 +150,29 @@ handleDeleteTwo(repoId) {
 render() {
     return (
       <div className="lesson-two">
+      <h2>Unit 2</h2>
       {this.state.unitsTwo.map((val) => {
           return (
-          <div className="lesson-item">
             <LessonTwoList
             type={val.type}
+            unit={val.unit}
             title={val.title}
             github={val.github}
             id={val._id}
+            objective={val.objective}
+            resource={val.resources}
             handleDeleteTwo={this.handleDeleteTwo}
             handleEditTwo={this.handleEditTwo}
             />
-          </div>
             )
          })}
 
         <div>
           <form
-          onSubmit={this.state.handleSubmitUnitTwo}>
-          <label>Enter Type</label>
+          onSubmit={this.state.handleSubmitUnitTwo}
+          className='form-add'
+          >
+          <label>Enter Type
           <input 
           name="type"
           type="text"
@@ -176,8 +180,9 @@ render() {
           placeholder="Enter Type(LEC, LAB or HW)"
           onChange={this.handleInputTypeChangeTwo}
           />
+          </label>
 
-          <label>Enter Unit</label>
+          <label>Enter Unit
           <input 
           name="unit"
           type="text"
@@ -185,8 +190,9 @@ render() {
           placeholder="Enter Unit"
           onChange={this.handleInputUnitChangeTwo}
           />
+          </label>
 
-          <label>Enter Title</label>
+          <label>Enter Title
           <input 
           name="title"
           type="text"
@@ -194,8 +200,9 @@ render() {
           placeholder="Enter Title"
           onChange={this.handleInputTitleChangeTwo}
           />
+          </label>
 
-          <label>Enter Github Link</label>
+          <label>Enter Link
           <input 
           name="github"
           type="text"
@@ -203,7 +210,9 @@ render() {
           placeholder="Enter Link"
           onChange={this.handleInputGithubChangeTwo}
           />
-          <input type="submit" value="Add!" />
+          </label>
+
+          <input className='submit-add' type="submit" value="Add!" />
           </form>
           </div>
       </div>

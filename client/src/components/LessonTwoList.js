@@ -38,7 +38,7 @@ class LessonTwoList extends Component {
 
   renderEditForm() {
   return (
-    <li>
+   
       <form 
       className="edit-form"
       onSubmit={(event) => {
@@ -46,33 +46,47 @@ class LessonTwoList extends Component {
         this.setState({isBeingEdited: false});
       }}
       >
+      
+     <label>
+      Enter Type
       <input 
       type="text"
       value={this.state.inputTypeValue}
       name='type'
       onChange={this.handleInputTypeChange}
       /><br/>
+      </label>
 
+      <label>
+      Enter Unit
       <input 
       type="text"
       value={this.state.inputUnitValue}
       name='unit'
       onChange={this.handleInputUnitChange}
       /><br/>
+      </label>
 
+      <label>
+      Enter Title
       <input 
       type="text"
       value={this.state.inputTitleValue}
       name='title'
       onChange={this.handleInputTitleChange}
       /><br/>
+      </label>
 
+
+      <label>
+      Enter Link
       <input 
       type="text"
       value={this.state.inputGithubValue}
       name='github'
       onChange={this.handleInputGithubChange}
       /><br/>
+      </label>
 
       <input
       style={{visibility: 'hidden'}}
@@ -80,9 +94,9 @@ class LessonTwoList extends Component {
       name="id"
       value={this.props.id}
       />
-      <input type='submit' value='Submit!'/>
+      <input className='submit-edit' type='submit' value='Submit!'/>
       </form>
-    </li>
+    
   );
 }
 
@@ -91,15 +105,16 @@ class LessonTwoList extends Component {
 
   renderLessonTwo() {
     return (
-      <div className="lessonTwoList">
-         <h3>{this.props.type}:  {this.props.title}</h3>
-        <a href={this.props.github}>Github Link</a>
-        <button onClick={() => { this.props.handleDeleteTwo(this.props.id) }}>
+      <div className="lesson">
+         <p className='h3-one'>{this.props.type}</p>
+        <span className='one-title'>{this.props.title}</span>
+        <a href={this.props.github} target="_blank" className='linkOne'> Github link</a>
+        <button onClick={() => { this.props.handleDeleteTwo(this.props.id) }} className='delOne'>
           Delete
           </button>
         <button onClick={() => {
           this.setState({isBeingEdited: true})
-        }}>
+        }} className='editOne'>
           Edit!
         </button>
       </div>
