@@ -10,14 +10,15 @@ import {
 
 class Header extends Component {
   render() {
+  //   <Route path='/api/units/' component={Home} />
+  //  <Link to='/api/units/' className='home' >HOME</Link> 
      
     return (
        <Router>
       <div className="header">
         <h3>ADABASE</h3>
 
-        <Route path='/api/units/' component={Home} />
-        <Link to='/api/units/' className='home' >HOME</Link> 
+        
       </div>
        </Router>
     );
