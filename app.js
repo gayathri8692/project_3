@@ -22,10 +22,10 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // place whatever routes you need to use for your API above a catchall for anything
 // that should send the React app back.
-app.get('/api', apiRoutes)
-app.get('/*', function (req, res) {
-   res.sendFile(path.join(__dirname, 'build', 'index.html'));
- });
+// app.get('/api', apiRoutes)
+// app.get('/*', function (req, res) {
+//    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//  });
 
 
 

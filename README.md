@@ -3,7 +3,7 @@ PROJECT- ADA LIBRARY
 
 ## OVERVIEW
 
-The basic idea of this app is to provide the user to add a lecture,homework or labs in four different units along with the git.generalassemb.ly link and to edit and delete the information on these homeworks, labs and lectures.
+Adabase is a visualization tool for our GA course material. Here, users can quickly browse Lectures, Labs, and Homeworks, as well as helpful resources for each unit. The basic idea of this app is to provide the user to add a lecture,homework or labs in four different units along with the git.generalassemb.ly link and to edit and delete the information on these homeworks, labs and lectures.
 
 ## Necessary Features
 1. Provide the list of lectures, labs and homeworks in all the four units.
@@ -21,6 +21,8 @@ The basic idea of this app is to provide the user to add a lecture,homework or l
 ![wireframe2](./assets/unit.png)
 ![wireframe3](./assets/edit.png)
 ![wireframe4](./assets/add.png)
+
+## [Link to WireFrames](https://invis.io/Y8BT1I7FE)
 
 ## Database Structure
 1. Initial thoughts of database structure was MongoDb and Mongoose library.
