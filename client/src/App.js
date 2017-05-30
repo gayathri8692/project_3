@@ -36,10 +36,7 @@ setLesson(){
           <div className='one'>
           <Header />
           <div className='units'>
-             <Link to='/api/units/one' className='unit1' onClick={this.setLesson}>
-             UNIT 1
-             </Link>  
-
+             <Link to='/api/units/one' className='unit1' onClick={this.setLesson}>UNIT 1</Link>  
              <Link to='/api/units/two' className='unit2' onClick={this.setLesson}>UNIT 2</Link> 
              <Link to='/api/units/three' className='unit3' onClick={this.setLesson}>UNIT 3</Link> 
              <Link to='/' className='unit4' onClick={this.setLesson}>UNIT 4</Link> 

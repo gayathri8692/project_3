@@ -1,13 +1,13 @@
-/*.units {
-  background-image: url('./images/www.jpg');
+.one {
+  background-image: url('./images/bg.jpg');
   background-size: cover;
-}*/
+}
 
 
 .header {
   background-color: rgb(51, 48, 45);
   margin-top: -20px;
-  height: 60px;
+  height: 70px;
   width: 100%;
   color: white;
   line-height: 60px;
@@ -15,7 +15,7 @@
 
 h3 {
   padding: 23px 60px;
-  font-size: 16px;
+  font-size: 24px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -41,13 +41,12 @@ h3 {
 a.unit1 {
   height: 150px;
   width: 150px;
-  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('./images/b5.jpg');
+  background: rgba(246, 35, 29, 0.5);
   background-size: cover;
   font-weight: bold;
   color: white;
@@ -58,13 +57,12 @@ a.unit1 {
 a.unit2 {
   height: 150px;
   width: 150px;
-  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('./images/b2.jpg');
+  background: rgba(18, 143, 149, 0.5);
   background-size: cover;
   font-weight: bold;
   color: white;
@@ -76,13 +74,12 @@ a.unit3 {
   text-align: center;
   height: 150px;
   width: 150px;
-  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('./images/b3.jpg');
+  background: rgba(246,129,29, 0.5);
   background-size: cover;
   font-weight: bold;
   color: white;
@@ -93,14 +90,12 @@ a.unit3 {
 a.unit4 {
   height: 150px;
   width: 150px;
-  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('./images/b4.jpeg');
-  /*background: rgba(76, 175, 80, 0.5);*/
+  background: rgba(23,194,34, 0.5);
   background-size: cover;
   font-weight: bold;
   color: white;
@@ -113,9 +108,13 @@ a.unit4 {
   right: 0;
   bottom: 0;
   left: 0;
+  height: 70px;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: #333;
+  color: #FFF;
   text-align: center;
+  font-size: 16px;
+  line-height: 70px;
 }
 
 .featured {
@@ -128,14 +127,14 @@ a.unit4 {
 
 
 .lesson-one {
-  height: 360px;
+  height: 380px;
   width: 900px;
   border: 1px solid black;
   overflow: scroll;
   text-align: center;
   margin: 30px 70px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .lesson-two {
@@ -146,7 +145,7 @@ a.unit4 {
   text-align: center;
   margin: 30px 70px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .lesson-three {
@@ -157,14 +156,14 @@ a.unit4 {
   text-align: center;
   margin: 30px 70px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .lesson {
   padding: 30px;
   overflow: scroll;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 20px;
 }
 
@@ -175,7 +174,7 @@ p.h3-one{
   justify-content: space-around;
   font-size: 25px;
   background: lightgrey;
-  border-radius: 10px;
+  border-radius: 5px;
 
 }
 
@@ -191,7 +190,7 @@ a.linkOne {
   height: 30px;
   width: 80px;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 5px;
   background: lightgray;
 }
 
@@ -199,16 +198,17 @@ a.linkOne {
   height: 30px;
   width: 80px;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 20px;
-  background: red;
+  background: #F6201D;
+  color: #FFF;
 }
 
 .editOne {
   height: 30px;
   width: 80px;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 
@@ -228,7 +228,7 @@ input.submit-edit {
   height: 20px;
   width: 80px;
   border: 1px solid lightgrey;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 input.submit-add {
@@ -236,7 +236,7 @@ input.submit-add {
   height: 20px;
   width: 80px;
   border: 1px solid lightgrey;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 form.form-add{
