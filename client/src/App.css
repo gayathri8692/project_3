@@ -29,7 +29,7 @@ h3 {
 }
 
 .units {
-  height: 370px;
+  height: 390px;
   width: 950px;;
   display: flex;
   align-items: center;
@@ -108,13 +108,11 @@ a.unit4 {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 70px;
   padding: 1rem;
   background-color: #333;
   color: #FFF;
   text-align: center;
   font-size: 16px;
-  line-height: 70px;
 }
 
 .featured {

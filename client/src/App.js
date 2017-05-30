@@ -39,7 +39,7 @@ setLesson(){
              <Link to='/api/units/one' className='unit1' onClick={this.setLesson}>UNIT 1</Link>  
              <Link to='/api/units/two' className='unit2' onClick={this.setLesson}>UNIT 2</Link> 
              <Link to='/api/units/three' className='unit3' onClick={this.setLesson}>UNIT 3</Link> 
-             <Link to='/' className='unit4' onClick={this.setLesson}>UNIT 4</Link> 
+            <Link to='/' className='unit4' onClick={this.setLesson}>UNIT 4</Link> 
              </div>
              <Footer />
           </div>
@@ -55,7 +55,7 @@ setLesson(){
           <Route exact path='/api/units/one' component={LessonOne} /> 
           <Route path='/api/units/two' component={LessonTwo} />           
           <Route path='/api/units/three' component={LessonThree} />           
-          <Route path='/' component={Header} />
+          <Route path='/'  />
         </main>
         
         <Footer />
